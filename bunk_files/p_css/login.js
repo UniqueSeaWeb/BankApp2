@@ -1,10 +1,10 @@
 /** ログイン画面 **/
-/* ID一覧スプレッドシート：https://docs.google.com/spreadsheets/d/17_Nby4CksFtpc-d_4MTuZrHrBsBp_JqBKpbJwZvNynI/edit?gid=0#gid=0 */
+/* ID一覧スプレッドシート：https://docs.google.com/spreadsheets/d/1NftJ7cv4KZOpkh0QW1RgosI0vlQPHKEiHS80lGkMJW0/edit?gid=0#gid=0 */
 // ID一覧スプレッドシートのウェブアプリURLを定義
-var IDLIST_GAS_URL = 'https://script.google.com/macros/s/AKfycbxuO97YNrFuWkkHWLWsZU4XMC2XDkwTbC3WTmqwoP4z6lnm4jIBJOxi4A5YeZWhjqvi/exec';
-/* ログイン履歴スプレッドシート：https://docs.google.com/spreadsheets/d/1sS71EywHbFpgPH9Ky2nf_05fFP9rchPHO55q4XL90P4/edit?gid=0#gid=0 */
+var IDLIST_GAS_URL = 'https://script.google.com/macros/s/AKfycbxvWnLDCQPPjhTYf4ZsmkgI0rtzJ0ZBklczam35ECOtoa8smC0zYJVWjSmcyJyJ-GG8bw/exec';
+/* ログイン履歴スプレッドシート：https://docs.google.com/spreadsheets/d/1EYg7kVkW_GZSAfFISS7MnHIZ-1SrG5RokLR8jmtJ61A/edit?gid=0#gid=0 */
 // ログイン履歴スプレッドシートのウェブアプリURLを定義
-var LOG_GAS_URL = 'https://script.google.com/macros/s/AKfycbzN7j5vPU1XWfXaA8Pnzc2XgLCHbDc0ygPcawb7Fs4fMoKVe4424Drn8n2B-spir4jLFQ/exec';
+var LOG_GAS_URL = 'https://script.google.com/macros/s/AKfycbxBtLFFuKDK4YEu_doqD7VgX4SUFPaYMCT5Iixqe2NlaCr_uLqExsvxluxwuWcypIPV/exec';
 
 window.addEventListener('DOMContentLoaded', function () {
     // 要素を取得
