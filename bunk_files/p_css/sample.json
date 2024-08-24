@@ -1,0 +1,304 @@
+{
+	"summaryByDate": [
+		{
+			"date": "2024-06-12",
+			"totalAmount": -900
+		},
+		{
+			"date": "2023-08-27",
+			"totalAmount": 0
+		},
+		{
+			"date": "2023-08-26",
+			"totalAmount": 0
+		},
+		{
+			"date": "2023-08-25",
+			"totalAmount": 0
+		},
+		{
+			"date": "2023-08-24",
+			"totalAmount": 0
+		},
+		{
+			"date": "2023-08-22",
+			"totalAmount": -300
+		},
+		{
+			"date": "2023-08-19",
+			"totalAmount": 750
+		},
+		{
+			"date": "2023-08-18",
+			"totalAmount": 1000
+		},
+		{
+			"date": "2023-08-17",
+			"totalAmount": 1500
+		},
+		{
+			"date": "2023-08-16",
+			"totalAmount": 49500
+		}
+	],
+	"summaryByMonth": [
+		{
+			"month": "2023-08",
+			"totalAmount": 52450
+		},
+		{
+			"month": "2024-06",
+			"totalAmount": -900
+		}
+	],
+	"rawData": [
+		{
+			"menuID": 8,
+			"ID": 28,
+			"Timestamp": "2024-06-12 09:46:43",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": -1000
+		},
+		{
+			"menuID": 1,
+			"ID": 1163,
+			"Timestamp": "2024-06-12 09:46:03",
+			"UserID": 99999,
+			"Amount_entered": 100,
+			"Amount": 100
+		},
+		{
+			"menuID": 10,
+			"ID": 1,
+			"Timestamp": "2023-08-27 10:37:18",
+			"UserID": 99999,
+			"Amount_entered": 0,
+			"Amount": 0
+		},
+		{
+			"menuID": 10,
+			"ID": 1,
+			"Timestamp": "2023-08-26 10:37:18",
+			"UserID": 99999,
+			"Amount_entered": 0,
+			"Amount": 0
+		},
+		{
+			"menuID": 6,
+			"ID": 142,
+			"Timestamp": "2023-08-25 14:53:20",
+			"UserID": 99999,
+			"Amount_entered": -50,
+			"Amount": 50
+		},
+		{
+			"menuID": 6,
+			"ID": 141,
+			"Timestamp": "2023-08-25 14:47:38",
+			"UserID": 99999,
+			"Amount_entered": 50,
+			"Amount": -50
+		},
+		{
+			"menuID": 10,
+			"ID": 1,
+			"Timestamp": "2023-08-25 10:37:18",
+			"UserID": 99999,
+			"Amount_entered": 0,
+			"Amount": 0
+		},
+		{
+			"menuID": 1,
+			"ID": 241,
+			"Timestamp": "2023-08-24 15:53:47",
+			"UserID": 99999,
+			"Amount_entered": 0,
+			"Amount": 0
+		},
+		{
+			"menuID": 10,
+			"ID": 1,
+			"Timestamp": "2023-08-24 10:37:17",
+			"UserID": 99999,
+			"Amount_entered": 0,
+			"Amount": 0
+		},
+		{
+			"menuID": 6,
+			"ID": 4,
+			"Timestamp": "2023-08-22 18:40:17",
+			"UserID": 99999,
+			"Amount_entered": 300,
+			"Amount": -300
+		},
+		{
+			"menuID": 3,
+			"ID": 9,
+			"Timestamp": "2023-08-19 12:52:56",
+			"UserID": 99999,
+			"Amount_entered": 100,
+			"Amount": -100
+		},
+		{
+			"menuID": 1,
+			"ID": 20,
+			"Timestamp": "2023-08-19 12:52:35",
+			"UserID": 99999,
+			"Amount_entered": 500,
+			"Amount": 500
+		},
+		{
+			"menuID": 1,
+			"ID": 19,
+			"Timestamp": "2023-08-19 12:52:11",
+			"UserID": 99999,
+			"Amount_entered": 100,
+			"Amount": 100
+		},
+		{
+			"menuID": 1,
+			"ID": 16,
+			"Timestamp": "2023-08-19 08:54:49",
+			"UserID": 99999,
+			"Amount_entered": 250,
+			"Amount": 250
+		},
+		{
+			"menuID": 1,
+			"ID": 15,
+			"Timestamp": "2023-08-18 17:21:06",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": 1000
+		},
+		{
+			"menuID": 1,
+			"ID": 14,
+			"Timestamp": "2023-08-17 12:55:00",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": 1000
+		},
+		{
+			"menuID": 1,
+			"ID": 13,
+			"Timestamp": "2023-08-17 10:18:49",
+			"UserID": 99999,
+			"Amount_entered": 50000,
+			"Amount": 50000
+		},
+		{
+			"menuID": 1,
+			"ID": 12,
+			"Timestamp": "2023-08-17 10:16:53",
+			"UserID": 99999,
+			"Amount_entered": 1051000,
+			"Amount": 1051000
+		},
+		{
+			"menuID": 8,
+			"ID": 3,
+			"Timestamp": "2023-08-17 10:16:13",
+			"UserID": 99999,
+			"Amount_entered": 1000000,
+			"Amount": -1000000
+		},
+		{
+			"menuID": 3,
+			"ID": 7,
+			"Timestamp": "2023-08-17 10:15:05",
+			"UserID": 99999,
+			"Amount_entered": 100000,
+			"Amount": -100000
+		},
+		{
+			"menuID": 6,
+			"ID": 3,
+			"Timestamp": "2023-08-17 10:14:15",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": -1000
+		},
+		{
+			"menuID": 2,
+			"ID": 11,
+			"Timestamp": "2023-08-17 10:13:27",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": -1000
+		},
+		{
+			"menuID": 1,
+			"ID": 11,
+			"Timestamp": "2023-08-17 10:12:58",
+			"UserID": 99999,
+			"Amount_entered": 1000,
+			"Amount": 1000
+		},
+		{
+			"menuID": 1,
+			"ID": 10,
+			"Timestamp": "2023-08-17 08:57:06",
+			"UserID": 99999,
+			"Amount_entered": 500,
+			"Amount": 500
+		},
+		{
+			"menuID": 1,
+			"ID": 9,
+			"Timestamp": "2023-08-16 22:24:10",
+			"UserID": 99999,
+			"Amount_entered": 10000,
+			"Amount": 10000
+		},
+		{
+			"menuID": 1,
+			"ID": 8,
+			"Timestamp": "2023-08-16 22:21:20",
+			"UserID": 99999,
+			"Amount_entered": 20000,
+			"Amount": 20000
+		},
+		{
+			"menuID": 1,
+			"ID": 7,
+			"Timestamp": "2023-08-16 22:13:18",
+			"UserID": 99999,
+			"Amount_entered": 10000,
+			"Amount": 10000
+		},
+		{
+			"menuID": 2,
+			"ID": 10,
+			"Timestamp": "2023-08-16 18:14:14",
+			"UserID": 99999,
+			"Amount_entered": 500,
+			"Amount": -500
+		},
+		{
+			"menuID": 1,
+			"ID": 6,
+			"Timestamp": "2023-08-16 18:09:34",
+			"UserID": 99999,
+			"Amount_entered": 10000,
+			"Amount": 10000
+		},
+		{
+			"menuID": 2,
+			"ID": 9,
+			"Timestamp": "2023-08-16 18:09:11",
+			"UserID": 99999,
+			"Amount_entered": "",
+			"Amount": 0
+		},
+		{
+			"menuID": 3,
+			"ID": 6,
+			"Timestamp": "2023-08-16 18:08:51",
+			"UserID": 99999,
+			"Amount_entered": "",
+			"Amount": 0
+		}
+	]
+}

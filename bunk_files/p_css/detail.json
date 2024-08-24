@@ -1,0 +1,108 @@
+[
+    {
+        "resultCode": "200",
+        "resultMessage": "正常終了",
+        "result": [
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            },
+            {
+                "transTime": "2024/08/20 00:00:00",
+                "menuId": "3",
+                "transAmount": "99999"
+            }
+        ]
+    }
+]

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>あそび大学こども銀行 | とりひきのりれき</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/reset.css">
+    <link rel="stylesheet" href="../bunk_files/p_css/components.css">
+    <link rel="stylesheet" href="../bunk_files/p_css/common.css">
+    <!-- 画面個別CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/history.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="com_headerContent">
+            <p class="com_typo_header"><span class="c_typo_PNK01">あ</span><span class="c_typo_PPL01">そ</span><span
+                    class="c_typo_BLU01">び</span><span class="c_typo_GRN01"><ruby>大<rt>だい</rt></ruby></span><span
+                    class="c_typo_YEL01"><ruby>学<rt>がく</rt></ruby></span>　こども<ruby>銀行<rt>ぎんこう</rt></ruby></p>
+            <a id="c_logoutLink">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512" style="width: 48px; height: 48px;" xml:space="preserve">
+                    <g>
+                        <polygon
+                            points="257.101,94.287 257.101,94.448 340.312,94.448 340.312,204.811 376.378,204.811 376.378,58.987 
+                                376.378,58.542 376.378,58.542 376.378,58.382 257.101,58.382 257.101,94.178 257.101,94.287"
+                            style="fill: rgb(0, 134, 115);"></polygon>
+                        <polygon
+                            points="376.378,307.35 376.378,307.19 340.312,307.19 340.312,417.553 257.101,417.553 257.101,453.346 
+                                257.101,453.455 257.101,453.455 257.101,453.619 376.378,453.619 376.378,307.795 376.378,307.35"
+                            style="fill: rgb(0, 134, 115);"></polygon>
+                        <path
+                            d="M509.566,251.08l-84.652-64.094c-1.133-0.878-2.422-1.238-3.661-1.238c-3.191,0-6.179,2.524-6.179,6.184
+                                v27.305c0,3.402-2.786,6.183-6.184,6.183h-32.511h-36.066h-18.551c-3.398,0-6.129,2.73-6.129,6.133v48.894
+                                c0,3.402,2.73,6.133,6.129,6.133h18.551h36.066h32.511c3.398,0,6.184,2.782,6.184,6.18v27.309c0,3.66,2.988,6.183,6.179,6.183
+                                c1.238,0,2.528-0.359,3.661-1.238l84.652-64.094C512.811,258.447,512.811,253.553,509.566,251.08z"
+                            style="fill: rgb(0, 134, 115);"></path>
+                        <path d="M204.652,11.444c-2.422,0.05-4.946,0.363-7.473,1.082L38.332,58.382L28.027,61.37l-12.156,3.504
+                                C6.442,67.604,0,76.21,0,86.05v339.902c0,9.84,6.442,18.441,15.871,21.175l12.156,3.504l10.305,2.989l158.847,45.855
+                                c2.527,0.718,5.051,1.082,7.473,1.082c14.27,0,26.687-11.594,26.687-26.793v-20.144v-36.066V94.448V58.382V38.237
+                                C231.339,23.038,218.922,11.444,204.652,11.444z M159.515,277.358v-42.664c0-2.832,2.27-5.047,5.051-5.047h16.746
+                                c2.782,0,4.996,2.215,4.996,5.047v42.664c0,2.782-2.214,4.996-4.996,4.996h-16.746
+                                C161.785,282.354,159.515,280.139,159.515,277.358z" style="fill: rgb(0, 134, 115);">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="c_headerBar c_headerBar_GRN">
+            <div class="c_headerBar_left c_headerBar_YEL"></div>
+        </div>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- 残高表示エリア -->
+        <section class="bh_userCardSec">
+            <div class="bh_userCardArea">
+                <div class="bh_userCard">
+                    <div class="bh_nameArea">
+                        <p class="bh_typo_name">
+                            <span id="bh_userName"></span>　さま
+                        </p>
+                    </div>
+                    <div class="bh_amountArea">
+                        <p class="bh_typo_amount">
+                            <span id="bh_amuntKids"></span>　キッズ
+                        </p>
+                    </div>
+                    <div class="bh_imageArea">
+                        <img src="../bunk_files/p_image/bh_penguin_surfing.svg" alt="bh_penguin_surfing" width="100%" class="bh_display_none">
+                    </div>
+                    <div class="bh_imageArea">
+                        <img src="../bunk_files/p_image/bh_penguin_schoolBag.svg" alt="bh_penguin_schoolBag" width="100%">
+                    </div>
+                    <div class="bh_imageArea">
+                        <img src="../bunk_files/p_image/bh_penguin_cold.svg" alt="bh_penguin_cold" width="100%" class="bh_display_none">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- グラフ表示エリア -->
+        <section class="bh_historyGraphSec">
+            <div class="bh_historyGraphArea">
+                <div class="bh_historyAreaTitle">
+                    <p class="bh_typo_historyTitle">ざんだかのりれき</p>
+                    <div class="bh_pullDown_graphSelector"><select class="bh_pullDown_graphSelector_select" onchange="changePulldown()">
+                            <option value="day" selected="selected">日ごと</option>
+                            <option value="month">月ごと</option>
+                        </select>
+                        <div tabindex="0" class="bh_pullDown_graphSelector_menu">
+                            <div class="bh_pullDown_graphSelector_menu_selected"></div>
+                            <div class="bh_pullDown_graphSelector_icon_triangle"><svg width="32" height="32" viewbox="0 0 32 32"
+                                    fill="none" class="bh_pullDown_graphSelector_icon_triangleDown">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.0697 13.87L16.8197 19.69C16.5997 19.89 16.2997 20.01 15.9897 20.01C15.6797 20.01 15.3797 19.9 15.1597 19.69L8.90972 13.87C8.74972 13.71 8.63972 13.52 8.59972 13.31C8.55972 13.1 8.57972 12.88 8.66972 12.68C8.75972 12.48 8.90972 12.31 9.09972 12.19C9.28972 12.07 9.51972 12 9.74972 12H22.2597C22.4897 12 22.7197 12.06 22.9197 12.18C23.1197 12.3 23.2697 12.47 23.3497 12.67C23.4397 12.87 23.4597 13.09 23.4097 13.31C23.3597 13.52 23.2497 13.72 23.0797 13.87H23.0697Z"
+                                        fill="#0F92C4"></path>
+                                </svg><svg width="32" height="32" viewbox="0 0 32 32" fill="none"
+                                    class="bh_pullDown_graphSelector_icon_triangleUp">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.92929 18.13L15.1793 12.31C15.3993 12.11 15.6993 11.99 16.0093 11.99C16.3193 11.99 16.6193 12.1 16.8393 12.31L23.0893 18.13C23.2493 18.29 23.3593 18.48 23.3993 18.69C23.4393 18.9 23.4193 19.12 23.3293 19.32C23.2393 19.52 23.0893 19.69 22.8993 19.81C22.7093 19.93 22.4793 20 22.2493 20H9.73929C9.50929 20 9.27929 19.94 9.07929 19.82C8.88929 19.7 8.72929 19.53 8.64929 19.33C8.55929 19.13 8.53929 18.91 8.58929 18.69C8.63929 18.48 8.74929 18.28 8.91929 18.13H8.92929Z"
+                                        fill="#0F92C4"></path>
+                                </svg></div>
+                        </div>
+                        <div class="bh_pullDown_graphSelector_listBox">
+                            <ul class="bh_pullDown_graphSelector_list"></ul>
+                        </div>
+                        <div class="bh_pullDown_graphSelector_outSideClose"></div>
+                    </div>
+                </div>
+                <div class="bh_graphArea">
+                    <div class="bh_box">
+                        <img src="../bunk_files/p_image/penguin.png" alt="penguin" width="100%">
+                    </div>
+                    <div class="bh_graph">
+                        <div class="bh_canvasArea">
+                            <canvas class="bh_canvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="bh_image">
+                        <img src="../bunk_files/p_image/antarctic.svg" alt="antarctic">
+                    </div>
+                </div>
+                <div class="bh_graphArea">
+                    <div class="bh_box">
+                        <img src="../bunk_files/p_image/penguin.png" alt="penguin" width="100%">
+                    </div>
+                    <div class="bh_graph">
+                        <div class="bh_canvasArea">
+                            <canvas class="bh_canvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="bh_image">
+                        <img src="../bunk_files/p_image/antarctic.svg" alt="antarctic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 履歴表示エリア -->
+        <section class="bh_transHistorySec">
+            <div class="bh_transHistoryArea">
+                <div class="bh_historyIsNull">
+                    <div class="bh_nullTypo">とりひきのりれきがありません</div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+<script src="../bunk_files/p_css/event.js"></script>
+<script src="../bunk_files/p_css/common.js"></script>
+<script src="../bunk_files/p_css/history_v3.js"></script>
+</body>
+
+</html>

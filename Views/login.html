@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>あそび大学こども銀行 | ログイン</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/reset.css?20240219">
+    <link rel="stylesheet" href="../bunk_files/p_css/common.css?20240219">
+    <link rel="stylesheet" href="../bunk_files/p_css/components.css?20240219">
+    <!-- 画面個別CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/login.css?20240219">
+</head>
+
+<body>
+    <!-- メイン -->
+    <main>
+        <!-- 画像エリア -->
+        <section class="bl_imageArea">
+            <div class="bl_container">
+                <div class="bl_sunImageFrame">
+                    <div class="bl_sunImage"></div>
+                </div>
+                <div class="bl_cityImage">
+                    <div class="bl_titleBox">
+                        <p class="c_typo_headerL c_typo_align_center"><span class="c_typo_PNK01">あ</span><span
+                                class="c_typo_PPL01">そ</span><span class="c_typo_BLU01">び</span><span
+                                class="c_typo_GRN01"><ruby>大<rt>だい</rt></ruby></span><span class="c_typo_YEL01"><ruby>学
+                                    <rt>がく</rt>
+                                </ruby></span></p>
+                        <div class="bl_titleSpace">
+                            <p class="c_typo_headerXXL c_typo_BLK10 c_typo_align_center">こども<ruby>銀行<rt>ぎんこう</rt></ruby>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ログインフォームエリア -->
+        <section class="bl_loginFormArea">
+            <div class="bl_container">
+                <p class="c_typo_headerL c_typo_BLK10 c_typo_align_center">ログイン</p>
+                <div id="bl_inputMode">
+                    <div class="bl_textFieldArea">
+                        <div class="c_textField">
+                            <div class="c_textField_labelArea">
+                                <p class="c_typo_headerS c_typo_BLK10">ID</p>
+                                <p class="c_typo_headerS c_typo_ERROR">&#42;</p>
+                            </div>
+                            <div class="c_textField_inputArea">
+                                <input inputmode="numeric" maxlength="5" placeholder="にゅうりょくしてください"
+                                    autocomplete="username" tabindex="0"
+                                    class="c_textField_input c_textField_typo_input" id="bl_userId">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bl_loginErrorArea">
+                        <div class="c_notification"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                style="width: 24px; height: 24px;" xml:space="preserve">
+                                <g>
+                                    <path d="M256,0C114.615,0,0,114.612,0,256s114.615,256,256,256c141.384,0,256-114.612,256-256S397.384,0,256,0z
+                                         M281.479,412.736c-6.925,6.917-15.409,10.364-25.479,10.364c-10.066,0-18.562-3.545-25.476-10.661
+                                        c-6.913-7.306-10.364-15.703-10.364-25.174c0-9.875,3.45-18.264,10.364-25.181c6.913-6.902,15.409-10.372,25.476-10.372
+                                        c10.265,0,18.769,3.356,25.479,10.074c6.905,6.918,10.364,15.405,10.364,25.479C291.843,397.331,288.384,405.835,281.479,412.736z
+                                         M290.657,137.463L267.549,315c-0.789,7.314-4.636,10.976-11.549,10.976c-2.963,0-5.537-1.191-7.698-3.554
+                                        c-2.178-2.38-3.463-4.851-3.856-7.421l-23.107-177.537c-0.397-3.546-0.587-7.984-0.587-13.323c0-8.694,2.963-16.685,8.884-24.008
+                                        c5.926-7.496,14.703-11.24,26.364-11.24c11.256,0,19.946,3.654,26.07,10.959c6.125,7.314,9.178,15.397,9.178,24.289
+                                        C291.248,129.868,291.05,134.322,290.657,137.463z"
+                                        style="fill: rgb(239, 11, 11);"></path>
+                                </g>
+                            </svg>
+                            <div class="c_notification_text">
+                                <p class="c_typo_headerS c_typo_BLK10"></p>
+                            </div>
+                            <div class="c_notification_closeBtn"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                    style="width: 24px; height: 24px;" xml:space="preserve" tabindex="0">
+                                    <g>
+                                        <polygon points="512,52.535 459.467,0.002 256.002,203.462 52.538,0.002 0,52.535 203.47,256.005 0,459.465 
+                                        52.533,511.998 256.002,308.527 459.467,511.998 512,459.475 308.536,256.005 	"
+                                            style="fill: rgb(46, 46, 46);"></polygon>
+                                    </g>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="bl_loginBtnArea">
+                        <div class="bl_loginBtnWidth">
+                            <a href="javascript:void(0);" tabindex="0" class="c_button c_button_green" id="bl_loginBtn">
+                                <p class="c_typo_cta c_typo_WHT c_typo_align_center">ログイン</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bl_confirmMode" class="bl_hidden">
+                    <div class="bl_confirmArea">
+                        <p class="c_typo_bodyL c_typo_BLK10">あなたのニックネームは、<br>「<span id="bl_nickname"
+                                class="bl_highlight"></span>」さんですか？</p>
+                    </div>
+                    <div class="bl_confirmBtnArea">
+                        <div class="bl_agreeBtnWidth">
+                            <a href="javascript:void(0);" tabindex="0" class="c_button c_button_green" id="bl_agreeBtn">
+                                <p class="c_typo_cta c_typo_WHT c_typo_align_center">はい</p>
+                            </a>
+                        </div>
+                        <div class="bl_disagreeBtnWidth">
+                            <a href="./alert.html" tabindex="0" class="c_button c_button_white" id="bl_disagreeBtn">
+                                <p class="c_typo_cta c_typo_GRN10 c_typo_align_center">いいえ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../bunk_files/p_css/event.js?20240219"></script>
+    <script src="../bunk_files/p_css/common.js?20240219"></script>
+    <script src="../bunk_files/p_css/login.js?20240219"></script>
+</body>
+
+</html>

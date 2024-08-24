@@ -1,0 +1,148 @@
+/** ログイン画面 **/
+body {
+    background-color: #FEF2CC;
+}
+
+/* 画像エリア */
+.bl_imageArea {
+    padding: 32px 20px 0;
+}
+
+@media (min-width: 760px) {
+    .bl_imageArea {
+        padding: 48px 32px 0;
+    }
+
+    .bl_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bl_imageArea>.bl_container {
+        max-width: 800px;
+    }
+}
+
+.bl_cityImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 288px;
+    background-image: url('../p_image/city.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bl_sunImageFrame {
+    position: relative;
+}
+
+.bl_sunImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-image: url('../p_image/sun.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bl_titleBox {
+    padding: 8px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
+}
+
+.bl_titleSpace {
+    padding-top: 4px;
+}
+
+/* 表示/非表示切り替え */
+.bl_hidden {
+    display: none;
+}
+
+/* ログインフォームエリア */
+.bl_loginFormArea {
+    padding: 24px 20px 0;
+}
+
+.bl_typo_formTitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #2E2E2E;
+    text-align: center;
+}
+
+.bl_textFieldArea {
+    padding-top: 24px;
+}
+
+.bl_loginErrorArea {
+    display: none;
+    padding-top: 8px;
+}
+
+.bl_showLoginError {
+    display: block;
+}
+
+.bl_loginBtnArea {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.bl_loginBtnWidth {
+    width: 280px;
+}
+
+.bl_typo_loginBtn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media (min-width: 760px) {
+    .bl_loginFormArea {
+        padding: 32px 0 0;
+    }
+
+    .bl_loginFormArea>.bl_container {
+        max-width: 592px;
+    }
+
+    .bl_typo_formTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+/* 選択エリア */
+.bl_confirmArea {
+    padding-top: 24px;
+}
+
+.bl_highlight {
+    background: linear-gradient(transparent 60%, #008673 120%);
+}
+
+.bl_confirmBtnArea {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.bl_confirmBtnArea>div:last-child {
+    margin-left: 16px;
+}
+
+.bl_agreeBtnWidth, .bl_disagreeBtnWidth {
+    flex-basis: 100%;
+}

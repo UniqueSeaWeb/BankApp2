@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>あそび大学こども銀行 | アカウント発行</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/reset.css?20240501">
+    <link rel="stylesheet" href="../bunk_files/p_css/components.css?20240501">
+    <link rel="stylesheet" href="../bunk_files/p_css/common.css?20240501">
+    <!-- 画面個別CSS -->
+    <link rel="stylesheet" href="../bunk_files/p_css/accountIssuance.css?20240501">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="com_headerContent">
+            <p class="com_typo_header"><span class="c_typo_PNK01">あ</span><span class="c_typo_PPL01">そ</span><span
+                    class="c_typo_BLU01">び</span><span class="c_typo_GRN01"><ruby>大<rt>だい</rt></ruby></span><span
+                    class="c_typo_YEL01"><ruby>学<rt>がく</rt></ruby></span>　こども<ruby>銀行<rt>ぎんこう</rt></ruby></p>
+        </div>
+        <div class="c_headerBar c_headerBar_BLU">
+            <div class="c_headerBar_left c_headerBar_YEL"></div>
+        </div>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- タイトルセクション -->
+        <section class="bai_ttlSec">
+            <h1 class="bai_typo_ttl">アカウント<ruby>発行<rt>はっこう</rt></ruby></h1>
+            <div class="bai_lead">
+                <p class="bai_typo_lead">こども<ruby>銀行<rt>ぎんこう</rt></ruby>のアカウントを<ruby>作成<rt>さくせい</rt>
+                    </ruby>できます。<ruby>好
+                        <rt>す</rt>
+                    </ruby>きなニックネームを<ruby>入力<rt>にゅうりょく</rt></ruby>し、<ruby>発行<rt>はっこう</rt>
+                    </ruby>するボタンを<ruby>押<rt>お</rt></ruby>してください。</p>
+            </div>
+        </section>
+
+        <!-- 入力セクション -->
+        <section class="bai_inputSec">
+            <div class="bai_inputCard">
+                <div class="bai_accountIcon"><img src="../bunk_files/p_image/account.svg?20240401"></div>
+                <div class="bai_textFieldArea">
+                    <div class="c_textField">
+                        <div class="c_textField_labelArea">
+                            <p class="c_textField_typo_label">ニックネーム</p>
+                            <p class="c_textField_typo_asterisk">&#42;</p>
+                        </div>
+                        <div class="c_textField_inputArea">
+                            <input type="text" placeholder="入力してください" class="c_textField_input c_textField_typo_input"
+                                id="bai_name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 確定ボタンエリア -->
+        <div class="bai_confirmBtnArea">
+            <a href="javascript:void(0);" class="bai_confirmBtn bai_confirmBtn_disabled" tabindex="-1"
+                id="bai_confirmBtn">
+                <p class="bai_typo_confirmBtn"><ruby>発行<rt>はっこう</rt></ruby>する</p>
+            </a>
+        </div>
+
+        <section class="com_linkSec bai_linkSec">
+            <div class="c_textLink"><a href="./login.html"><svg width="48" height="48" viewBox="0 0 544 544">
+                        <g>
+                            <path class="st0" d="M469.672,213.675H145.324L275.68,84.727c16.623-16.438,16.767-43.253,0.329-59.866
+                        c-16.438-16.624-43.243-16.767-59.867-0.328L12.566,225.901C4.52,233.863,0,244.691,0,256.003c0,11.312,4.52,22.13,12.566,30.093
+                        l203.576,201.368c16.624,16.438,43.428,16.304,59.867-0.33c16.438-16.613,16.294-43.417-0.329-59.855L145.324,298.322h324.347
+                        c23.374,0,42.328-18.945,42.328-42.319C512,232.62,493.045,213.675,469.672,213.675z"
+                                style="fill: #1E88E5;"></path>
+                        </g>
+                    </svg>
+                    <p class="com_typo_textLink">ログイン画面へ</p>
+                </a></div>
+        </section>
+    </main>
+
+    <!-- 共通JavaScript -->
+    <script src="../bunk_files/p_css/event.js?20240501"></script>
+    <script src="../bunk_files/p_css/common.js?20240501"></script>
+    <!-- 画面個別JavaScript -->
+    <script src="../bunk_files/p_css/accountIssuance.js?20240501"></script>
+</body>
+
+</html>

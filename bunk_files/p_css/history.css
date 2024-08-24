@@ -1,0 +1,473 @@
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+/* メイン */
+/* 非表示クラス */
+.bh_display_none {
+    display: none;
+}
+
+/* 残高表示エリア */
+.bh_userCardSec {
+    position: fixed;
+    top: 64px;
+    width: 100%;
+    z-index: 9;
+    background-color: #FFFFFF;
+}
+
+.bh_userCardArea {
+    padding: 32px 20px 8px;
+}
+
+.bh_userCard {
+    position: relative;
+    padding: 16px;
+    border: 3px solid #D5D5D5;
+    border-radius: 16px;
+}
+
+.bh_typo_name {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.bh_amountArea {
+    padding-top: 16px;
+    padding-right: 80px;
+}
+
+.bh_typo_amount {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: right;
+}
+
+#bh_amuntKids {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.bh_imageArea {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+
+}
+
+/* グラフ表示エリア */
+.bh_historyGraphSec {
+    padding-top: 200px;
+}
+
+.bh_historyGraphArea {
+    padding: 32px 20px 0;
+}
+
+.bh_historyAreaTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bh_typo_historyTitle {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #0F92C4;
+}
+
+.bh_graphArea {
+    position: relative;
+    padding-top: 16px;
+}
+
+/* プルダウン */
+.bh_pullDown_graphSelector {
+    position: relative;
+}
+
+.bh_pullDown_graphSelector_menu {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 16px;
+    border: 2px solid #0F92C4;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+/* エリア外クリックで閉じる */
+.bh_pullDown_graphSelector_isOpen .bh_pullDown_graphSelector_outSideClose {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bh_pullDown_graphSelector_menu_selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+/* 選択項目の要素をメニューに表示する際はチェックアイコン、凡例アイコンを消す */
+.bh_pullDown_graphSelector_menu_selected>.bh_pullDown_graphSelector_icon_check,
+.bh_pullDown_graphSelector_menu_selected>.bh_pullDown_graphSelector_icon_hanrei {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    .bh_pullDown_graphSelector_menu {
+        max-width: 384px;
+    }
+
+    .bh_pullDown_graphSelector_menu:hover {
+        background-color: #CCEBE6;
+    }
+}
+
+.bh_pullDown_graphSelector_icon_check>svg path {
+    stroke: #2E2E2E;
+}
+
+.bh_pullDown_graphSelector_icon_triangle {
+    padding-left: 8px;
+    flex-shrink: 0;
+}
+
+.bh_pullDown_graphSelector_icon_triangle .bh_pullDown_graphSelector_icon_triangleDown,
+.bh_pullDown_graphSelector_isOpen .bh_pullDown_graphSelector_icon_triangle .bh_pullDown_graphSelector_icon_triangleUp {
+    display: block;
+}
+
+.bh_pullDown_graphSelector_icon_triangle .bh_pullDown_graphSelector_icon_triangleUp,
+.bh_pullDown_graphSelector_isOpen .bh_pullDown_graphSelector_icon_triangle .bh_pullDown_graphSelector_icon_triangleDown {
+    display: none;
+}
+
+.bh_pullDown_graphSelector_listBox {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    max-width: 264px;
+    width: 90%;
+    max-height: 0;
+    position: absolute;
+    overflow-y: auto;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0, 0.2, 0.4, 1), visibility 0.2s cubic-bezier(0, 0.2, 0.4, 1);
+}
+
+.bh_pullDown_graphSelector_listBox .bh_pullDown_graphSelector_hanrei {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.bh_pullDown_graphSelector_listBox>*:first-child {
+    margin-top: 4px;
+}
+
+.bh_pullDown_graphSelector_listBox>*:last-child {
+    margin-bottom: 4px;
+}
+
+.bh_pullDown_graphSelector_hanrei_border {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.bh_pullDown_graphSelector_list li {
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.bh_pullDown_graphSelector_list li .bh_pullDown_graphSelector_listBorder {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.bh_pullDown_graphSelector_list li:last-child .bh_pullDown_graphSelector_listBorder {
+    border-bottom: none;
+}
+
+.bh_pullDown_graphSelector_isOpen .bh_pullDown_graphSelector_listBox {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bh_pullDown_graphSelector_list li p {
+    padding-left: 8px;
+}
+
+@media (min-width: 760px) {
+    .bh_pullDown_graphSelector_listBox {
+        max-width: 384px;
+        width: 100%;
+    }
+
+    .bh_pullDown_graphSelector_list li:hover {
+        background-color: #CCEBE6;
+    }
+}
+
+/* 選択チェックマークアイコン */
+.bh_pullDown_graphSelector_icon_check {
+    visibility: hidden;
+}
+
+.bh_pullDown_graphSelector_selected .bh_pullDown_graphSelector_icon_check {
+    visibility: visible;
+}
+
+/* 凡例アイコン */
+.bh_pullDown_graphSelector_icon_hanrei {
+    padding-left: 8px;
+}
+
+/* セレクト部分 */
+.bh_pullDown_graphSelector_select {
+    display: none;
+}
+
+/* ドロップダウン　タイポ設定 */
+.bh_typo_bodyM {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.bh_typo_headerS {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.bh_typo_BLK10 {
+    color: #2E2E2E;
+}
+
+.bh_typo_BLUE {
+    color: #0F92C4;
+}
+
+.bh_typo_align_left {
+    text-align: left;
+    word-break: break-all;
+}
+
+.bh_typo_oneLine {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+/* グラフ */
+.bh_box {
+    /* background-color: #87a5f8; */
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* キャンバスエリア */
+.bh_graph {
+    width: 100%;
+    aspect-ratio: 7 / 5;
+    position: relative;
+}
+
+/* キャンバスエリア */
+.bh_canvasArea {
+    height: 100%;
+    padding: 8px 0 24px 36px;
+}
+
+.bh_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* X軸ラベルエリア */
+.bh_graph_XlabelArea {
+    width: 100%;
+    display: flex;
+    padding-left: 24px;
+}
+
+.bh_graph_goodText {
+    padding-right: 8px;
+    flex-shrink: 0;
+}
+
+.bh_graph_goodText>p {
+    margin: 0;
+}
+
+.bh_graph_Xlabel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.bh_graph_Xlabel>div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.bh_graph_badText {
+    padding-left: 8px;
+    flex-shrink: 0;
+}
+
+.bh_graph_badText>p {
+    margin: 0;
+}
+
+/* Y軸ラベル */
+.bh_graph_YlabelArea {
+    height: 100%;
+    width: 100%;
+    padding: 8px 8px 24px 0;
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.bh_graph_Ylabel {
+    height: 50px;
+}
+
+.bh_yLabel {
+    width: 50px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin: 0;
+    transform: translateY(-50%);
+    text-align: end;
+}
+
+.bh_image {
+    width: 100%;
+    height: 100%;
+}
+
+.bh_image>img {
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 36px;
+    z-index: -1;
+    opacity: 0.18;
+}
+
+/* 履歴表示エリア */
+.bh_transHistorySec {
+    padding-top: 32px;
+}
+
+.bh_transHistoryArea {
+    padding: 16px 20px;
+    background-color: #FEF2CC;
+    box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.bh_historyIsNull {
+    padding: 16px 0;
+}
+
+.bh_nullTypo {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bh_historyUnit {
+    padding: 16px 0;
+}
+
+.bh_history_timestampArea {
+    display: flex;
+}
+
+.bh_history_time {
+    padding-left: 4px;
+}
+
+.bh_typo_timestamp {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.bh_history_detailArea {
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.bh_history_value {
+    display: flex;
+    align-items: end;
+}
+
+.bh_history_value>p:last-child {
+    padding-left: 4px;
+}
+
+.bh_typo_historyDetail {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.bh_typo_historyValue {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.bh_partition_dashed {
+    border: none;
+    border-top: 1px dashed #000000;
+}

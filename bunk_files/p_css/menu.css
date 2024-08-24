@@ -1,0 +1,203 @@
+/** メニュー選択画面 **/
+/* ボディ */
+body {
+    background-color: #FEF2CC;
+}
+
+/* 詳細エリア */
+.bm_nameArea {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bm_nameArea>p:last-child {
+    flex-shrink: 0;
+}
+
+.bm_typo_name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #2E2E2E;
+}
+
+.bm_nameArea>.bm_typo_name:last-child {
+    padding-left: 8px;
+}
+
+.bm_amountArea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.bm_userCardArea {
+    padding: 28px 36px 0;
+}
+
+.bm_userCard {
+    position: relative;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 3px solid #D5D5D5;
+    border-radius: 16px;
+}
+
+.bm_goodFaceIcon,
+.bm_badFaceIcon {
+    display: none;
+}
+
+.bm_showFaceIcon {
+    display: block;
+}
+
+.bm_amount {
+    display: flex;
+    align-items: baseline;
+    padding-left: 8px;
+}
+
+.bm_amount>p:last-child {
+    padding-left: 4px;
+}
+
+.bm_typo_amount {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #2E2E2E;
+}
+
+.bm_typo_unit {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #585858;
+}
+
+/* メニューエリア */
+.bm_menuArea {
+    padding: 24px 16px 28px;
+}
+
+.bm_menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bm_menuList>li {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.bm_menuList>li:nth-child(n+3) {
+    padding-top: 24px;
+}
+
+.bm_menuBtn {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 4px rgb(46, 46, 46, 0.2);
+}
+
+li:nth-child(4)>.bm_menuBtn {
+    padding: 16px 8px;
+}
+
+.bm_depositBtn {
+    border: 2px solid #B9477E;
+}
+
+.bm_withdrawBtn {
+    border: 2px solid #67498D;
+}
+
+.bm_salaryBtn {
+    border: 2px solid #5EA1C5;
+}
+
+.bm_taxBtn {
+    border: 2px solid #72AD66;
+}
+
+.bm_donateBtn {
+    border: 2px solid #CA853B;
+}
+
+.bm_helpBtn {
+    padding: 16px 8px;
+    border: 2px solid #E84F4C;
+}
+
+.bm_menuBtn>svg {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.bm_menuBtn>p {
+    padding-top: 4px;
+}
+
+.bm_typo_menuBtn {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+}
+
+.bm_depositBtn>.bm_typo_menuBtn {
+    color: #B9477E;
+}
+
+.bm_withdrawBtn>.bm_typo_menuBtn {
+    color: #67498D;
+}
+
+.bm_salaryBtn>.bm_typo_menuBtn {
+    color: #5EA1C5;
+}
+
+.bm_taxBtn>.bm_typo_menuBtn {
+    color: #72AD66;
+}
+
+.bm_donateBtn>.bm_typo_menuBtn {
+    color: #CA853B;
+}
+
+.bm_helpBtn>.bm_typo_menuBtn {
+    color: #E84F4C;
+}
+
+/* ダイアログ */
+.bm_dialogCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.bm_typo_dialogMessage {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #2E2E2E;
+}
+
+.bm_dialogImageArea {
+    padding-top: 16px;
+}
+
+.bm_dialogImage {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}

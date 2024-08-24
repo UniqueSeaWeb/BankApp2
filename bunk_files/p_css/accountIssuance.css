@@ -1,0 +1,125 @@
+/** アカウント発行 **/
+body {
+    background-color: #E3F2FD;
+}
+
+/* タイトルセクション */
+.bai_ttlSec {
+    padding: 32px 0 0;
+}
+
+.bai_typo_ttl {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bai_lead {
+    padding: 24px 20px 0;
+}
+
+.bai_typo_lead {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+@media (min-width: 760px) {
+    .bai_ttlSec {
+        padding: 64px 0 0;
+    }
+
+    .bai_typo_ttl {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .bai_lead {
+        padding: 48px 32px 0;
+    }
+
+    .bai_typo_lead {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+/* 入力セクション */
+.bai_inputSec {
+    padding: 24px 20px 0;
+}
+
+.bai_inputCard {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.bai_accountIcon {
+    text-align: center;
+}
+
+.bai_accountIcon>img {
+    width: 100px;
+    height: 100px;
+}
+
+.bai_textFieldArea {
+    padding-top: 24px;
+}
+
+@media (min-width: 760px) {
+    .bai_inputSec {
+        padding: 64px 0;
+    }
+
+    .bai_inputCard {
+        max-width: 592px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* 確定ボタンエリア */
+.bai_confirmBtnArea {
+    width: 280px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.bai_confirmBtn {
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    border: 3px solid #1976D2;
+    border-radius: 24px;
+    outline: none;
+    background-color: #1976D2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    transition: cubic-bezier(0, 0.2, 0.4, 1) 200ms;
+}
+
+.bai_confirmBtn:focus {
+    border: 3px solid #BBDEFB;
+}
+
+.bai_confirmBtn_disabled {
+    background-color: #D5D5D5;
+    border: 3px solid #D5D5D5;
+    box-shadow: none;
+    pointer-events: none;
+    transition: cubic-bezier(0, 0.2, 0.4, 1) 200ms;
+}
+
+.bai_typo_confirmBtn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bai_confirmBtn_disabled .bai_typo_confirmBtn {
+    color: #939393;
+}

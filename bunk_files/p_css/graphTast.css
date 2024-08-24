@@ -1,0 +1,104 @@
+body {
+    position: relative;
+}
+
+.spacing {
+    padding: 40px;
+}
+
+.box {
+    /* background-color: #87a5f8; */
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* キャンバスエリア */
+.graph {
+    width: 100%;
+    aspect-ratio: 7 / 3;
+    position: relative;
+}
+
+/* キャンバスエリア */
+.canvasArea {
+    height: 100%;
+    padding: 8px 0 24px 36px;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* X軸ラベルエリア */
+.graph_XlabelArea {
+    width: 100%;
+    display: flex;
+    padding-left: 24px;
+}
+
+.graph_goodText {
+    padding-right: 8px;
+    flex-shrink: 0;
+}
+
+.graph_goodText>p {
+    margin: 0;
+}
+
+.graph_Xlabel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.graph_Xlabel>div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.graph_badText {
+    padding-left: 8px;
+    flex-shrink: 0;
+}
+
+.graph_badText>p {
+    margin: 0;
+}
+
+/* Y軸ラベル */
+.graph_YlabelArea {
+    height: 100%;
+    width: 100%;
+    padding: 8px 8px 24px 0;
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.graph_Ylabel {
+    height: 50px;
+}
+
+.yLabel {
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image>img {
+    position: absolute;
+    top: 80px;
+    left: 36px;
+    z-index: -1;
+    opacity: 0.18;
+}

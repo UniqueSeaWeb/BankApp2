@@ -1,0 +1,90 @@
+/** 警告画面 **/
+/* ボディ */
+body {
+    background-color: #CCE2F2;
+}
+
+/* 画像エリア */
+.ba_imageArea {
+    padding: 32px 20px 0;
+}
+
+@media (min-width: 760px) {
+    .ba_imageArea {
+        padding: 48px 32px 0;
+    }
+
+    .ba_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ba_imageArea>.ba_container {
+        max-width: 800px;
+    }
+}
+
+.ba_cityImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 288px;
+    background-image: url('../p_image/city.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ba_iconsFrame {
+    position: relative;
+}
+
+.ba_rainImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 64px;
+    height: 64px;
+    background-image: url('../p_image/rainy.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ba_virus1Image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88px;
+    height: 88px;
+    background-image: url('../p_image/virus_1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ba_virus2Image {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-image: url('../p_image/virus_2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ba_titleBox {
+    padding: 8px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
+}
+
+.ba_titleSpace {
+    padding-top: 4px;
+}
+
+/* 警告エリア */
+.ba_alertArea {
+    padding: 24px 20px 0;
+}

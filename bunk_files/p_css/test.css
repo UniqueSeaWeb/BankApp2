@@ -1,0 +1,22 @@
+.test_title {
+    display: flex;
+    justify-content: center;
+}
+
+.test_title>p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.test_detail_title {
+    display: flex;
+    justify-content: center;
+}
+
+.test_detail_title>div>p {
+    margin: 0;
+}
+
+.test_detail_title>div:not(:first-child)>p {
+    padding-left: 80px
+}

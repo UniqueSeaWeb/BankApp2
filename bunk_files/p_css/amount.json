@@ -1,0 +1,9 @@
+[
+    {
+        "resultCode": "200",
+        "resultMessage": "正常終了",
+        "result": {
+            "amount": "99999"
+        }
+    }
+]
