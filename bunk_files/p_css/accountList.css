@@ -283,7 +283,7 @@ li:not(.bal_userListHidden) {
     padding-top: 8px;
 }
 
-.bal_userCardContents img {
+.bal_userCardContents svg {
     width: 24px;
     height: 24px;
 }
